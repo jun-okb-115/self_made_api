@@ -15,17 +15,18 @@ application/controllers/test.php<br>
 
 APIのロジック<br>
 
- ```public function json_hello($id = '')<br>
-    {<br>
-        $this->load->database();<br>
-        if($this->input->post()) {<br>
-            $id = $this->input->post('id');<br>
-            $result = $this->db->query("SELECT * FROM tests WHERE id = {$id}")->row();<br>
-        } else {<br>
-            $result = $this->db->query("SELECT text FROM tests WHERE id = {$id}")->row();<br>
-        }<br>
-        header('Access-Control-Allow-Origin: http://localhost:8099');<br>
-        header('Content-Type: application/json; charset=utf-8');<br>
-        echo json_encode($result);<br>
-    }
-    
+ ```
+ public function json_hello($id = '')
+ {
+      $this->load->database();
+      if($this->input->post()) {
+          $id = $this->input->post('id');
+          $result = $this->db->query("SELECT * FROM tests WHERE id = {$id}")->row();
+      } else {
+          $result = $this->db->query("SELECT text FROM tests WHERE id = {$id}")->row();
+      }
+      header('Access-Control-Allow-Origin: http://localhost:8099');
+      header('Content-Type: application/json; charset=utf-8');
+      echo json_encode($result);
+}
+```
