@@ -6,7 +6,7 @@ CodeIgniterの勉強を兼ねて、簡易的な自作APIの作成。
 
 CodeIgniter '3.2.0-dev'　<br>
 php 7.1<br>
-mysql '5.7'<br>
+mysql '5.7'<br><br>
 ローカル環境<br>
 docker nginx<br>
 
@@ -27,5 +27,5 @@ APIのロジック<br>
         header('Access-Control-Allow-Origin: http://localhost:8099');<br>
         header('Content-Type: application/json; charset=utf-8');<br>
         echo json_encode($result);<br>
-    }```
+    }
     
