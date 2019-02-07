@@ -4,7 +4,7 @@ CodeIgniterの勉強を兼ねて、簡易的な自作APIの作成。
 
 使用環境
 
-CodeIgniter '3.2.0-dev'
+CodeIgniter '3.2.0-dev'　
 php 7.1
 mysql '5.7
 '
