@@ -4,10 +4,9 @@ CodeIgniterの勉強を兼ねて、簡易的な自作APIの作成。
 
 使用環境
 
-CodeIgniter '3.2.0-dev'　
+CodeIgniter '3.2.0-dev'　<br>
 php 7.1
-mysql '5.7
-'
+mysql '5.7'
 ローカル環境
 docker nginx
 
